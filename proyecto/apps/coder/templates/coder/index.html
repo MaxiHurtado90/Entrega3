@@ -1,0 +1,17 @@
+{% extends 'coder/base.html' %}
+
+{% block contenido %}
+    <h2>¡Coderhouse!</h2>
+    <p>Bienvenido a nuestra página principal. Explora nuestras opciones:</p>
+    
+    <a href="{% url 'coder:curso' %}"> Curso</a>
+    <br>
+    <a href="{% url 'coder:crear-estudiante' %}">Crear Estudiante</a>
+    <br>
+    <a href="{% url 'coder:crear-comentario' %}">Dejar Comentario</a>
+    <br>
+
+{% endblock contenido %}
+
+
+
